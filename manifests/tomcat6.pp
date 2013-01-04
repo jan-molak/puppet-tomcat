@@ -18,8 +18,8 @@ class tomcat::tomcat6 {
     owner   => root,
     group   => tomcat6,
     source  => only_existing_sources([
-      "/vagrant/files/${module_name}/etc/tomcat6",
-      "puppet:///modules/${module_name}/etc/tomcat6"
+      "/vagrant/files/tomcat/etc/tomcat6",
+      "puppet:///modules/tomcat/etc/tomcat6"
     ]),
     sourceselect => 'all',
     require      => Package['tomcat6'],
