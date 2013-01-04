@@ -1,5 +1,5 @@
 class tomcat::tomcat6 {
-  include utils
+  include file_transporter
 
   package { "tomcat6": ensure => installed }
   package { "tomcat6-admin": ensure => installed }
